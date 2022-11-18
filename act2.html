@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+     <!-- <div ng-app ng-init="value1=16; value2=28">
+       <p>The total of value 1 and value 2:{{value1 + value2}} </p>
+    </div> -->
+
+    <!-- <div ng-app ng-init="courseinfo={Course:'BSIT', YearLevel:'2nd Year'}">
+
+    <p>Course Information: {{courseinfo.Course + "-" + courseinfo.YearLevel}}</p>
+</div>  -->
+
+<div ng-app>
+    <label>Value 1:</label>
+    <input type="number" ng-model="val1">
+    <label>Value 2:</label>
+    <input type="number" ng-model="val2">
+    <p>Total is: {{val1 + val2 | currency:"Php"}}</p>
+</div>
+
+</body>
+   
+</html>
